@@ -22,6 +22,7 @@
 #include <iostream>
 #include "point2d.h"
 #include <SDL2/SDL.h>
+#include <signal.h>
 #include <vector>
 
 using namespace std;
