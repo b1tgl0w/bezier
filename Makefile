@@ -11,7 +11,7 @@ CC = g++
 INCLUDE =
 
 ## Object files and executables
-MAIN_OUT = a.out
+MAIN_OUT = obj/bezier
 
 ## Requirements for each command
 MAIN_REQS = main.cpp
@@ -23,6 +23,7 @@ all: main
 
 ## Main 
 main: $(MAIN_REQS)
+	mkdir -p obj/
 	$(CC) $(MAIN_TARGETS) $(LIBS) -o $(MAIN_OUT)
 
 clean:
